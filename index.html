@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memo</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    </head>
+
+    <body>
+        
+        <div class="wrapper" id="gameBlock">            
+            <div class="question" id="question"></div>
+            <div class="answer" id="answer"></div>
+            <div class="counts" id="counts">        
+                <span class="count">0</span>
+                <span class="count">1</span>
+                <span class="count">2</span>
+                <span class="count">3</span>
+                <span class="count">4</span>
+                <span class="count">5</span>
+                <span class="count">6</span>
+                <span class="count">7</span>
+                <span class="count">8</span>
+                <span class="count">9</span>
+            </div>
+            <div class="sets_and_results">
+                <div class="difficulty_time">
+                    <div class="left">
+                        <span>Time:</span>
+                    </div>
+                    
+                    <div class="right">
+                        <span class="one_s" data-setstime="1">1s</span><span class="two_s" data-setstime="2">2s</span><span class="three_s" data-setstime="3">3s</span>
+                    </div>
+                </div>
+                <div class="difficulty_counts">
+                    <div class="left">
+                        <span>Quantity:</span>
+                    </div>
+                    
+                    <div class="right">
+                        <!-- <span class="one_s" data-setsquant="low">Low</span><span class="two_s" data-setsquant="middle">Middle</span><span class="three_s" data-setsquant="high">High</span> -->
+                        <!-- <select>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select> -->
+
+                        <span><span class="left_triangle" id="leftTriangle"></span><span id="quantityValue">5</span><span class="right_triangle" id="rightTriangle"></span></span>
+
+                    </div>
+                </div>            
+                <span class="right_answer">Win: <span class="right_answer_value" id="win">0</span></span>
+                <span class="wrong_answer">Fail: <span class="wrong_answer_value" id="fail">0</span></span>
+            </div>
+            <button class="button_ok" id="ok">OK</button>
+            <button class="button_fake_ok" id="fakeOk">OK</button>
+            <button class="button_start" id="start">START</button>
+
+        </div>
+
+        <div class="welcome">
+            <div class="closer" id="closer">+</div>            
+            
+            <div class="text">
+                <p>Welcome to "Memo"!</p><br> 
+                <p>This app trains your memory.</p>
+                <p>Try to remember and repeat as much longer combination of numbers as you can.</p>
+                <p>You can set quantity of numbers and its showing time.</p>
+                <p>Good luck!</p>
+            </div>
+            
+            <button class="training" id="training">Start training</button>
+        </div>
+
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
